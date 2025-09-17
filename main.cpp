@@ -5,9 +5,15 @@ using namespace std;
 
 // Function to add two numbers
 double add(double a, double b);
+double add(double a,double b){
+    return a+b;
+}
 
 // Function to subtract two numbers
 double sub(double a, double b);
+double sub(double a,double b){
+    return a-b;
+}
 
 // Function to multiply two numbers
 double mul(double a, double b);
