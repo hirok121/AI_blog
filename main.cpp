@@ -17,9 +17,15 @@ double sub(double a,double b){
 
 // Function to multiply two numbers
 double mul(double a, double b);
+double mul(double a, double b){
+    return a * b;
+}
 
 // Function to divide two numbers
 double div(double a, double b);
+double div(double a, double b){
+    return a / b;
+}
 
 // Function to get a valid number from user input
 double getNumber(const string &prompt)
@@ -100,6 +106,10 @@ int main()
             {
                 result = div(num1, num2);
                 cout << "Result: " << num1 << " / " << num2 << " = " << result << endl;
+            }
+            else
+            {
+                cout << "Error: Division by zero is not allowed!" << endl;
             }
             break;
 
